@@ -101,11 +101,14 @@ header .logo .divider {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-family: "DM Mono",Arial;
+
 }
 
 .countdown-wrapper {
     flex-direction: column;
     flex: 0 0 auto;
+
 }
 
 h1 {
@@ -116,15 +119,16 @@ h1 {
   
   li {
     display: inline-block;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
   }
   
   li span {
+
     display: block;
-    font-size: 4.5rem;
+    /* font-size: 4.5rem; */
   }
 
 /* Styles for a section with iframe and text area */
