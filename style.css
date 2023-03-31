@@ -105,6 +105,15 @@ header .logo .divider {
 
 }
 
+.divider {
+    flex: 1 100%;
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    border-top: 2px solid #E8E8E8;
+
+}
+
 .countdown-wrapper {
     flex-direction: column;
     flex: 0 0 auto;
@@ -121,7 +130,7 @@ h1 {
     display: inline-block;
     /* font-size: 1.5em; */
     list-style-type: none;
-    padding: 1em;
+    padding: 0.25em;
     text-transform: uppercase;
   }
   
@@ -239,6 +248,17 @@ h2{
     font-size: 24px;
     line-height: 1.4;
     text-transform: uppercase;
+    /* color: #A53F5B; */
+    color: #5a2752
+}
+
+h3 {
+    /* font-family: "TradeGothic",sans-serif; */
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 0px;
     /* color: #A53F5B; */
     color: #5a2752
 }
