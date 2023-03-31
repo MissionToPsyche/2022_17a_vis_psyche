@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Psyche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
     <script
       type="module"
@@ -45,15 +48,24 @@
             </section>
             <div class="container-fluid d-flex align-items-center">
                 <div class="countdown-wrapper">
-                    <h2 id="headline">Countdown to Launch Window</h2>
+                    <div class="divider"></div>
+                    <h3 id="headline">Countdown to Launch Window</h3>
                     <div id="countdown">
                         <ul>
-                        <li><span id="days"></span>days</li>
-                        <li><span id="hours"></span>Hours</li>
-                        <li><span id="minutes"></span>Minutes</li>
-                        <li><span id="seconds"></span>Seconds</li>
+                            <li><span id="years"></span>years</li>
+                            <li><span>:</span>-</li>
+                            <li><span id="months"></span>months</li>
+                            <li><span>:</span>-</li>
+                            <li><span id="days"></span>days</li>
+                            <li><span>:</span>-</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span>:</span>-</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span>:</span>-</li>
+                            <li><span id="seconds"></span>Seconds</li>
                         </ul>
                     </div>
+                    <div class="divider"></div>
                 </div>               
             </div>
             <section class="model-section">
@@ -68,7 +80,7 @@
                             <!-- </div>                   -->
                         </div>
                         <div class="psyche-wrapper">
-                            <model-viewer src="./psycheSat.glb"
+                            <model-viewer src="https://media.githubusercontent.com/media/MissionToPsyche/2022_17a_vis_psyche/main/psycheSat.glb"
                             alt="Psyche asteroid in 3D"
                             ar
                             ar-modes="webxr scene-viewer quick-look"
