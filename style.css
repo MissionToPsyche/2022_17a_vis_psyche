@@ -228,9 +228,9 @@ ul {
     data-visibility-attribute: visible;
 } */
 
-.Hotspot:hover {
-    /* opacity: 1; */
-}
+/* .Hotspot:hover {
+    opacity: 1;
+} */
 
 /* .hotspot[slot="hotspot-hand"]{
     --min-hotspot-opacity: 0;
