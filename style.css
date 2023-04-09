@@ -82,16 +82,18 @@ header .container {
 }
 
 header .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
     position: relative;
-    display: block;
-    margin-right: auto;
-    white-space: nowrap;
 }
 
 header .logo a {
     color: black;
     text-decoration: none;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
 header .logo img {
@@ -103,6 +105,7 @@ header .logo .divider {
     display: inline-block;
     width: 1px;
     /* height: 46px; */
+    flex-grow: 0;
     margin: 0 14px;
     vertical-align: middle;
     background-color: #666;
@@ -116,7 +119,7 @@ header .logo .divider {
 
 }
 
-.divider {
+.countdown-wrapper .divider {
     flex: 1 100%;
     width: 100%;
     margin: 0;
