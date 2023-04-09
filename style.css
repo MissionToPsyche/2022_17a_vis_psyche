@@ -47,7 +47,7 @@ header .container {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    min-height: 100px;
+    /* min-height: 100px; */
     /* max-height: fit-content; */
 }
 
@@ -60,7 +60,12 @@ header .container {
     /* max-height: fit-content; */
 }
 
-
+.d-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+ }
 
 .align-items-center {
     -webkit-box-align: center !important;
@@ -69,7 +74,12 @@ header .container {
     align-items: center !important;
 }
 
-
+.align-items-left {
+    -webkit-box-align: left !important;
+    -webkit-align-items: left !important;
+    -ms-flex-align: left !important;
+    align-items: left !important;
+}
 
 header .logo {
     position: relative;
@@ -118,7 +128,7 @@ header .logo .divider {
 .countdown-wrapper {
     flex-direction: column;
     flex: 0 0 auto;
-
+    width: 100%;
 }
 ul {
     padding-inline-start: 0;
@@ -140,7 +150,7 @@ ul {
 
 /* Styles for a section with iframe and text area */
 .iframe-section {
-    margin-top: 125px; /* adjust as needed to avoid overlapping with header */
+    margin-top: 0px; /* adjust as needed to avoid overlapping with header */
     /* height: fit-content; */
 }
 
@@ -351,13 +361,14 @@ h2{
     align-items: left;
     margin-top: 100px;
     flex-direction: row;
+    width: 100%;
 }
 
 .content-wrapper .content-section{
     box-sizing: border-box;
     /* margin-right: 16px; */
     margin-bottom: 16px;
-    flex: 0 0 40%; /* adjust to change the width of the elements */
+    flex: 0 0 50%; /* adjust to change the width of the elements */
     height: auto;
     /* align-self: flex-start; */
 }
@@ -365,9 +376,9 @@ h2{
     box-sizing: border-box;
     /* margin-right: 16px; */
     margin-bottom: 16px;
-    flex: 0 0 55%; /* adjust to change the width of the elements */
+    flex: 0 0 50%; /* adjust to change the width of the elements */
     max-width: 100%; /*Prevents overflow*/
-    aspect-ratio: 16/9; /* Set height to 0 to allow padding-bottom to work */
+    aspect-ratio: 1/1; /* Set height to 0 to allow padding-bottom to work */
     /* padding-bottom: 30.25%;  16:9 aspect ratio  */
 }
 
@@ -417,6 +428,12 @@ footer {
 
 /* Media Queries For Mobile Support */
 
+@media (min-width: 320px){
+    .logo a, .logo img, .logo .divider {
+        height: 47px;
+    }
+ }
+
 /* Mobile */
 @media (min-width: 375px){
     .container {
@@ -432,13 +449,11 @@ footer {
         height: 57px;
     }
 
-    .logo .divider {
+    .logo .divider, .logo a, .log img {
         height: 57px;
     }
 
-    .logo a {
-            height: 57px;
-    }
+
 
     .iframe-wrapper {
         display: flex;
@@ -502,7 +517,7 @@ footer {
         height: 68px;
     }
 
-    .logo a {
+    .logo a, .logo img {
         height: 68px;
     }
 }
