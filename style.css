@@ -140,7 +140,7 @@ ul {
 
 /* Styles for a section with iframe and text area */
 .iframe-section {
-    margin-top: 150px; /* adjust as needed to avoid overlapping with header */
+    margin-top: 125px; /* adjust as needed to avoid overlapping with header */
     /* height: fit-content; */
 }
 
