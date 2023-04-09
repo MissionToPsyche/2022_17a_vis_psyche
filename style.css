@@ -47,7 +47,7 @@ header .container {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    min-height: 100px;
+    /* min-height: 100px; */
     /* max-height: fit-content; */
 }
 
@@ -69,7 +69,12 @@ header .container {
     align-items: center !important;
 }
 
-
+.align-items-left {
+    -webkit-box-align: left !important;
+    -webkit-align-items: left !important;
+    -ms-flex-align: left !important;
+    align-items: left !important;
+}
 
 header .logo {
     position: relative;
