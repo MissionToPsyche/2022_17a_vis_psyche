@@ -35,6 +35,7 @@
                 <div class="container-fluid d-flex align-items-center">
                     <div class="iframe-wrapper">
                         <iframe src="https://eyes.nasa.gov/apps/asteroids/#/asteroids/16_psyche"></iframe>
+                        <!-- <div class="model-caption">3D model of PSYCHE satellite, a mission to explore asteroid 16 Psyche. Credit: NASA Visualization Technology Applications and Development</div> -->
                         <div class="text-wrapper">
                             <!-- <div class="text-content"> -->
                                 <!-- <div class="content"> -->
@@ -49,7 +50,7 @@
             <div class="container-fluid d-flex align-items-center">
                 <div class="countdown-wrapper">
                     <div class="divider"></div>
-                    <h3 id="headline">Countdown to Launch Window</h3>
+                    <h3 id="headline">Countdown to Launch Period</h3>
                     <div id="countdown">
                         <ul>
                             <li><span id="years"></span>yrs</li>
@@ -80,13 +81,39 @@
                             <!-- </div>                   -->
                         </div>
                         <!-- replace model src with https://media.githubusercontent.com/media/MissionToPsyche/2022_17a_vis_psyche/main/psycheSat.glb -->
+                        <!-- https://media.githubusercontent.com/media/Campbell3377/Campbell3377.github.io/main/psycheSat.glb -->
+                        <!-- Poster  -->
                         <div class="psyche-wrapper">
-                            <model-viewer src="https://media.githubusercontent.com/media/Campbell3377/Campbell3377.github.io/main/psycheSat.glb"
+                            <model-viewer src="https://media.githubusercontent.com/media/MissionToPsyche/2022_17a_vis_psyche/main/psycheSat.glb"
+                            loading="eager"
+                            poster="https://psyche.asu.edu/wp-content/uploads/2017/12/Psyche_Mission_Psyche_Spacecraft_Home_Page_171201-1024x845.png"
+                            camera-orbit="1104deg 129.5deg 8.403m" field-of-view="30deg"
                             alt="Psyche asteroid in 3D"
                             ar
                             ar-modes="webxr scene-viewer quick-look"
                             camera-controls
                             style="width: 100%; height: 100%;">
+                            <button class="Hotspot" slot="hotspot-1" data-surface="2083 0 171 191 189 0.356 0.430 0.213" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Gammaray Spectron</div>
+                            </button><button class="Hotspot" slot="hotspot-2" data-surface="2241 0 182 157 167 0.458 0.060 0.482" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">SPT (Stationary Plasma Thruster)</div>
+                            </button><button class="Hotspot" slot="hotspot-3" data-surface="2178 0 3498 3494 2861 0.047 0.340 0.613" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Magnetometer</div>
+                            </button><button class="Hotspot" slot="hotspot-5" data-surface="2012 0 1817743 1817744 1817712 0.791 0.203 0.006" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Cameras</div>
+                            </button><button class="Hotspot" slot="hotspot-7" data-surface="2012 0 3366662 3366631 3366630 0.006 0.168 0.826" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Star Tracker
+                                </div>
+                            </button><button class="Hotspot" slot="hotspot-8" data-surface="2012 0 1049356 1049325 1049324 0.123 0.601 0.276" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">DSOC - Deep Space Optical Communications</div>
+                            </button><button class="Hotspot" slot="hotspot-9" data-surface="2192 0 117174 10591 10589 0.177 0.547 0.275" data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation">Neutron Spectrometer</div>
+                            </button>
+
+                            <button slot="ar-button" id="ar-button">
+                                View in your space
+                            </button>
+                            
                             </model-viewer>
                             <div class="model-caption">3D model of PSYCHE satellite, a mission to explore asteroid 16 Psyche. Credit: NASA Visualization Technology Applications and Development</div>
                         </div>
@@ -102,10 +129,10 @@
                         <p><b>Oct 5-25, 2023:</b> Launch Window</p>
                         <p><b>2026:</b> Mars Flyby / Gravity Assist</p>
                         <p><b>2029:</b> Satellite Arrives at Psyche Asteroid</p>
-                        <p>&emsp;<b>Orbit A: 56 Days (41 Orbits)</b> - Characterization</p>
-                        <p>&emsp;<b>Orbit B: 80 Days (169 Orbits)</b> - Topography</p>
-                        <p>&emsp;<b>Orbit C: 100 Days (362 Orbits)</b> - Gravity Science</p>
-                        <p>&emsp;<b>Orbit D: 100 Days (684 Orbits)</b> - Elemental Mapping</p>
+                        <p>&emsp;<b>Orbit A</b> - Characterization</p>
+                        <p>&emsp;<b>Orbit B</b> - Topography</p>
+                        <p>&emsp;<b>Orbit C</b> - Gravity Science</p>
+                        <p>&emsp;<b>Orbit D</b> - Elemental Mapping</p>
                     </div>
                     <img src="https://psyche.asu.edu/wp-content/uploads/2022/06/trajectoryfinal.svg" alt="Psyche Timeline">
                 </div>

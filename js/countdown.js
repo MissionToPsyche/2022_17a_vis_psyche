@@ -12,7 +12,7 @@
       distance = launchDate - now;
       
     if (distance > 0) {
-      document.getElementById("headline").innerText = "Countdown to Launch Window";
+      document.getElementById("headline").innerText = "Countdown to Launch Period";
       document.getElementById("years").innerText = (Math.floor(distance / year)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}),
       document.getElementById("months").innerText = (Math.floor((distance % year) / month)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}),
       document.getElementById("days").innerText = (Math.floor((distance % month) / day)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}),
