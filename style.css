@@ -153,7 +153,7 @@ ul {
 
 /* Styles for a section with iframe and text area */
 .iframe-section {
-    margin-top: 0px; /* adjust as needed to avoid overlapping with header */
+    margin-bottom: 0px; /* adjust as needed to avoid overlapping with header */
     /* height: fit-content; */
 }
 
@@ -189,7 +189,7 @@ ul {
 
 /* Styles for a section with model and text area */
 .model-section {
-    margin-top: 0; /* adjust as needed to avoid overlapping with header */
+    margin-bottom: 20px; /* adjust as needed to avoid overlapping with header */
     /* height: fit-content; */
 }
 
@@ -256,7 +256,7 @@ ul {
 } */
 
 .HotspotAnnotation{
-    background-color: #cccccc;
+    background-color: #e4e4e4;
     position: absolute;
     transform: translate(10px, 10px);
     border-radius: 10px;
@@ -361,7 +361,7 @@ h2{
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: left;
+    align-items: center;
     margin-top: 100px;
     flex-direction: row;
     width: 100%;
@@ -379,7 +379,7 @@ h2{
     box-sizing: border-box;
     /* margin-right: 16px; */
     margin-bottom: 16px;
-    flex: 0 0 50%; /* adjust to change the width of the elements */
+    flex: 0 0 40%; /* adjust to change the width of the elements */
     max-width: 100%; /*Prevents overflow*/
     aspect-ratio: 1/1; /* Set height to 0 to allow padding-bottom to work */
     /* padding-bottom: 30.25%;  16:9 aspect ratio  */
@@ -491,6 +491,8 @@ footer {
         margin-right: 30px;
         width: 100%;
     }
+
+    .model-caption { font-size: .5rem; }
 }
 
 /* Mobile Switch model aspect ratio*/
@@ -523,6 +525,7 @@ footer {
     .logo a, .logo img {
         height: 68px;
     }
+    .model-caption { font-size: .6rem; }
 }
 
 /* Tablet */
@@ -703,7 +706,7 @@ footer {
         /* flex-direction: row; */
         /* align-items: flex-start; */
         /* margin-right: 30px; */
-        width: 50%;
+        width: 40%;
     }
 }
 
