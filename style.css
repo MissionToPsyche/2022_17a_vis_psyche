@@ -88,13 +88,59 @@ header .logo {
     position: relative;
 }
 
-header .logo a {
-    color: black;
+header .logo .links {
+    position: absolute;
+    right: 0;
+    /* align-self: right; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    /* position: relative; */
+    margin-left: 20px;
+  }
+  header .logo .links .active {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    border-radius: 10%;
+  }
+  header .logo .links .unactive {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 60%;
+  }
+  
+  header .logo .links .divider {
+    margin: 0 0;
+    height: 50%;
+  }
+  .home-link {
+    color: purple;
+    /* position: absolute;
+    right: 50px; */
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.more-link {
+    color: purple;
+    /* position: absolute;
+    right: 0; */
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+  
+  header .logo a {
+    color: purple;
     text-decoration: none;
     vertical-align: middle;
     display: flex;
     align-items: center;
-}
+  }
 
 header .logo img {
     max-height: 68px;
@@ -109,6 +155,7 @@ header .logo .divider {
     margin: 0 14px;
     vertical-align: middle;
     background-color: #666;
+    opacity: 0.5;;
 }
 
 .countdown-wrapper {

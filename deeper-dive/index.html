@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Psyche - Deep Dive </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psyche</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.0.2/dist/model-viewer.min.js"></script>
+     
+
+    <style>
+      .psyche-wrapper {
+          background-color: black;
+      }
+    
+
+      .home-link {
+            color: purple;
+            /* position: absolute;
+            right: 50px; */
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .more-link {
+            color: purple;
+            /* position: absolute;
+            right: 0; */
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        
+        main > section {
+            padding: 0 3em;
+        }
+        
+        video {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <header>
+		<div class="container d-flex align-items-left">
+        <div class="logo">
+              <a  href="https://www.nasa.gov/" rel="noopener">
+                  <img src="https://psyche.asu.edu/wp-content/themes/psyche/static/img/nasa.svg" alt="NASA">
+              </a>
+              <span class="divider"></span>
+              <a href="https://psyche.asu.edu/">
+                  <img src="https://psyche.asu.edu/wp-content/themes/psyche/static/img/psyche.svg" alt="Psyche">
+              </a>
+              <div class="links">
+                <div class="unactive">
+                  <a class="home-link" href="../index.html">Home</a>
+                </div>
+                <span class="divider"></span>
+                <div class="active">
+                  <a class="more-link" href="./index.html">More Info</a>
+                </div>
+              </div>
+        </div>
+            
+    </div>
+	</header>
+
+    <div class="main">
+        <section id="section1" class="model-section">
+          <div class="container-fluid d-flex align-items-center">
+              <div class="iframe-wrapper">
+                  <div class="text-wrapper">
+                              <h2>Psyche in the Solar System</h2>
+                              <p>Psyche is an asteroid located in the main asteroid belt between Mars and Jupiter. It has an elliptical orbit that takes it as close as 2.5 astronomical units (AU) from the sun at perihelion and as far as 3.3 AU at aphelion. Its orbit is inclined at an angle of approximately 3.1 degrees to the plane of the ecliptic. Psyche takes approximately 5.04 Earth years to complete one orbit around the sun.</p>
+                              <div id="player"></div>
+                  </div>
+              </div>
+            </div>
+        <script>
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              height: '500',
+              width: '560',
+              videoId: 'cS-SlJ_YjP0',
+              playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'loop': 1,
+                'mute': 1,
+                'playlist': 'cS-SlJ_YjP0', // Required for looping
+                'rel': 0,
+                'modestbranding': 1,
+                'disablekb': 1,
+                'enablejsapi': 1,
+                'playsinline': 1,
+              },
+              events: {
+                'onReady': onPlayerReady
+              }
+            });
+          }
+          function onPlayerReady(event) {
+            event.target.playVideo();
+          }
+        </script>
+
+        </section>
+        <!----->
+
+        <section class="model-section">
+          <div class="container-fluid d-flex align-items-center">
+              <div class="model-wrapper">
+                  <div class="text-wrapper">
+                              <h2>The Spacecraft</h2>
+                              <p>The Psyche spacecraft will test a sophisticated new laser communication technology that encodes data in photons at near-infrared wavelengths (rather than radio waves) to communicate between a probe in deep space and Earth. Using light instead of radio allows the spacecraft to communicate more data in a given amount of time.</p>
+                  </div>
+                  <div class="psyche-wrapper">  
+                    <model-viewer
+                    src="coloredSatellite.glb"
+                    alt="Psyche Satellite in 3D"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-controls
+                    style="width: 100%; height: 100%;"
+                    camera-orbit="195.2deg 72.69deg 270.7m" field-of-view="30deg"></model-viewer>
+                  ></model-viewer>
+                      <div class="model-caption">3D model of PSYCHE satellite, a mission to explore asteroid 16 Psyche. Credit: Shruti Sunil Ugalmugale</div>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+
+
+    
+        <!----->
+        <section class="model-section">
+          <div class="container-fluid d-flex align-items-center">
+              <div class="model-wrapper">
+                  <div class="text-wrapper">
+                              <h2>Origins in Greek Mythology</h2>
+                              <p>
+                                Psyche is a unique asteroid that holds clues to the violent collisions that created Earth and other terrestrial planets. The name "Psyche" is derived from the Greek mythological figure of the same name. In Greek mythology, Psyche was a mortal woman who became the wife of Eros (Cupid), the god of love, and was ultimately granted immortality.
+                            </p>
+                            <img src="psyche.jpeg" alt="Psyche" style="width:80%;">
+                            <div class="model-caption">The Wedding of Psyche - Edward Burne-Jones (1833-1898) - PD-art-100</div>
+                  </div>
+                  
+                                       
+              </div>
+          </div>
+      </section>
+        <!----->
+          <section class="model-section">
+              <div class="container-fluid d-flex align-items-center">
+                  <div class="model-wrapper">
+                      <div class="text-wrapper">
+                                  <h2>The Psyche Asteroid</h2>
+                                 <p> Psyche is a metallic asteroid located in the asteroid belt between Mars
+                                    and Jupiter. It is believed to be the exposed core of a protoplanet that
+                                    was destroyed by a collision with another object. Psyche is about 226
+                                    kilometers (140 miles) in diameter and is made mostly of iron and
+                                    nickel. It is the most massive metallic M-type asteroid known in the
+                                    solar system. </p> 
+                      </div>
+                      <div class="psyche-wrapper">  
+                        <model-viewer
+                        src="psychev2.glb"
+                        alt="Psyche asteroid in 3D"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        style="width: 100%; height: 100%;"
+                      ></model-viewer>
+                          <div class="model-caption">3D model of asteroid 16 PSYCHE. Credit: Samriddhi Agnihotri</div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </section>
+
+        </div>
+
+    <footer>
+      <h3><strong>PSYCHE /</strong> Journey To A Metal World</h3>
+      <p>This work was created in partial fulfillment of Arizona State University Capstone Course CSE 485/486. 
+          The work is a result of the Psyche Student Collaborations component of NASA's Psyche Mission (<a href="https://psyche.asu.edu">https://psyche.asu.edu</a>). “Psyche: A Journey to a Metal World” [Contract number NNM16AA09C] is part of the NASA Discovery Program mission to solar system targets. 
+          Trade names and trademarks of ASU and NASA are used in this work for identification only. Their usage does not constitute an official endorsement, either expressed or implied, by Arizona State University or National Aeronautics and Space Administration. 
+          The content is solely the responsibility of the authors and does not necessarily represent the official views of ASU or NASA.</p>
+  </footer>
+</body>
+</html>
